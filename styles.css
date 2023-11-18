@@ -10,32 +10,69 @@ header {
   background-position: center;
 }
 
-ul {
+.nav-bar {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 0 5%;
   width: 90%;
   background-color: rgb(54, 45, 45);
-  padding: 10px 0;
   border-radius: 15px;
 }
 
-ul li {
+.nav-bar li {
   margin-left: 40px;
   font: normal 500 22px/1.5 'Times New Roman', Times, serif;
 }
 
-ul li a {
+.nav-bar > li > a {
   text-decoration: none;
+  padding: 20px 30px;
+  display: block;
 }
 
-ul li a:link {
+.nav-bar li a:link {
   color: white;
 }
 
 a:visited {
   color: lightgreen;
+}
+
+.Submenu1 {
+  position: relative;
+}
+
+.Submenu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: #444;
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  left: -15px;
+}
+
+.Submenu li {
+  text-align: center;
+  margin: 0;
+}
+
+.Submenu a {
+  display: block;
+  font-size: 16px;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.Submenu a:hover {
+  background-color: #555;
+}
+
+.nav-bar li:hover .Submenu {
+  display: block;
 }
 
 #menu1 {
@@ -64,12 +101,13 @@ h1 > span {
   font-size: large;
   margin-left: 20px;
   width: 60%;
-  color: rgb(21, 41, 219);
+  color: wheat;
+  background-color: rgb(21, 41, 219);
 }
 
 .menu2 {
   display: flex;
-  margin: 2% 5%;
+  margin: 2px 5%;
   gap: 10px;
 }
 
@@ -110,7 +148,10 @@ h1 > span {
 }
 
 footer {
-  margin: 2% 5%;
+  display: grid;
+  grid-template-columns: 50% auto; /* 自动列宽（logo），1fr（剩余宽度平均分配给dash和words） */
+  align-items: center; /* 垂直居中 */
+  margin: 10px 5%;
   padding-bottom: 15%;
 }
 
@@ -120,20 +161,16 @@ footer {
   background-size: cover;
   height: 80px;
   width: 80px;
-  display: block;
-  float: left;
-}
-
-.words {
-  display: block;
-  float: right;
-  clear: right;
 }
 
 .dash {
-  float: right;
+  width: 100%; /* 调整dash宽度 */
+  height: 30px; /* 调整dash高度 */
   border-top: solid 2px black;
-  height: 5px;
-  width: 50%;
-  clear: right;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 10% auto;
+  justify-items: end;
 }
