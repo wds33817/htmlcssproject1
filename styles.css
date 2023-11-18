@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url('./img/little_lemon.png') no-repeat;
+  height: 200px;
+  margin: 2% 5%;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 5%;
+  width: 90%;
+  background-color: rgb(54, 45, 45);
+  padding: 10px 0;
+  border-radius: 15px;
+}
+
+ul li {
+  margin-left: 40px;
+  font: normal 500 22px/1.5 'Times New Roman', Times, serif;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:link {
+  color: white;
+}
+
+a:visited {
+  color: lightgreen;
+}
+
+#menu1 {
+  background: url('img/salmon-bg.jpg') no-repeat;
+  height: 270px;
+  margin: 2% 5%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#menu1 h1 {
+  color: rgb(21, 41, 219);
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font: normal 900 62px/1.5 'Times New Roman', Times, serif;
+}
+
+h1 > span {
+  color: rgb(21, 41, 219);
+}
+
+#menu1 p {
+  font-size: large;
+  margin-left: 20px;
+  width: 60%;
+  color: rgb(21, 41, 219);
+}
+
+.menu2 {
+  display: flex;
+  margin: 2% 5%;
+  gap: 10px;
+}
+
+.menu2 figure {
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.menu2 figure p > a {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.menu2 figure p {
+  margin-top: 20px;
+}
+
+.menu2 figure > h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#time {
+  margin: 7px 40px;
+}
+
+#time p {
+  margin-top: 0;
+}
+
+.demos-img {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+footer {
+  margin: 2% 5%;
+  padding-bottom: 15%;
+}
+
+.logo {
+  background: url('./img/logo.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  display: block;
+  float: left;
+}
+
+.words {
+  display: block;
+  float: right;
+  clear: right;
+}
+
+.dash {
+  float: right;
+  border-top: solid 2px black;
+  height: 5px;
+  width: 50%;
+  clear: right;
+}
