@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 header {
@@ -43,7 +44,7 @@ a:visited {
   position: relative;
 }
 
-.Submenu {
+.nav-bar .Submenu {
   display: none;
   position: absolute;
   min-width: 150px;
