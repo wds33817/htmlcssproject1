@@ -190,8 +190,8 @@ footer {
 }
 
 .container2 {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-auto-rows: minmax(150px, auto);
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: minmax(150px, auto);
   border: 1px solid black;
 }
