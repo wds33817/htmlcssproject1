@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 3fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 50px;
+  background-color: whitesmoke;
+  grid-template-areas: 'lefthead' 'midhead' 'rightstomach' 'righthead' 'leftstomach' 'rightbar' 'leftfooter' 'midfooter' 'rightfooter';
+}
+
+.lefthead {
+  padding: 150px;
+  background-color: aqua;
+}
+
+.midhead {
+  padding: 150px;
+  background-color: aqua;
+}
+
+.rightstomach {
+  padding: 150px;
+  background-color: aqua;
+  grid-row: span 2;
+}
+
+.righthead {
+  padding: 150px;
+  background-color: aqua;
+}
+
+.leftstomach {
+  padding: 150px;
+  background-color: aqua;
+  grid-column: span 2;
+}
+
+.rightbar {
+  padding: 150px;
+  background-color: aqua;
+  grid-row: span 2;
+}
+
+.leftfooter {
+  padding: 150px;
+  background-color: aqua;
+}
+
+.midfooter {
+  padding: 150px;
+  background-color: aqua;
+}
+
+.rightfooter {
+  padding: 150px;
+  background-color: aqua;
+}

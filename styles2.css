@@ -1,7 +1,7 @@
 /* Add code for container class below */
 * {
   margin: 0;
-  pardding: 0;
+  padding: 0;
 }
 .container {
   display: grid;
