@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-auto-rows: auto;
+}
+
+.item {
+  padding: 100px;
+  background: linear-gradient(
+    to bottom right,
+    hsl(180, 100%, 50%),
+    hsl(300, 100%, 50%)
+  );
+}
+
+.item3 {
+  grid-column: span 2;
+}
