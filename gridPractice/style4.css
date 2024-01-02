@@ -4,11 +4,6 @@
   grid-template-rows: repeat(10, 1fr);
   gap: 10px;
   height: 100vh;
-  grid-template-areas:
-    'item1 item3'
-    'item2'
-    'item4'
-    'item5 item6';
 }
 
 .item {

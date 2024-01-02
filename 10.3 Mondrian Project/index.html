@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      html {
+        margin: 0;
+        padding: 50px;
+      }
+
+      .container {
+        background-color: #000;
+        width: 748px;
+        height: 748px;
+        display: grid;
+        grid-template-rows: 6fr 3fr 0.2fr;
+        grid-template-columns: 1fr 1fr 0.16fr;
+        gap: 9px;
+      }
+
+      .item1 {
+        background-color: #e72f24;
+      }
+
+      .item2 {
+        background-color: #f0f1ec;
+        grid-column: span 2;
+      }
+
+      .item3 {
+        background-color: #f0f1ec;
+      }
+
+      .item4 {
+        background-color: #f0f1ec;
+      }
+
+      .item5 {
+        display: grid;
+        grid-row: span 3;
+        grid-template-rows: repeat(3, 1.4fr);
+        gap: 10px;
+      }
+
+      .item51 {
+        background-color: #004592;
+      }
+
+      .item52 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      .item6 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      .item7 {
+        background-color: #000;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 9px;
+        grid-row: span 2;
+      }
+
+      .itema {
+        grid-column: span 4;
+        background-color: #f9d01e;
+      }
+
+      .itemb {
+        grid-column: span 3;
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="item item1"></div>
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+      <div class="item item4"></div>
+      <div class="item item5">
+        <div class="item51"></div>
+        <div class="item52"></div>
+      </div>
+      <div class="item item6"></div>
+      <div class="item item7">
+        <div class="itema"></div>
+        <div class="itemb"></div>
+      </div>
+    </div>
+  </body>
+</html>
